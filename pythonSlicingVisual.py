@@ -1,4 +1,4 @@
-__author__ = "@coling"
+__author__ = "@coling7"
 __version__ = "11/3/2016"
 
 # v EDIT THESE VARIABLES
