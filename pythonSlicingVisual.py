@@ -5,6 +5,7 @@ __version__ = "11/3/2016"
 word = "Hello world!";
 start = None; # Can be set to int or None
 end = 5; # Can be set to int or None
+step = 1; # >0 is forwards, <0 is backwards
 
 print("\n ", end = '')
 for i in range(len(word) + 1):
@@ -22,4 +23,4 @@ print("+")
 for i in range(-len(word), 0):
 	print(i, " " * (3 - len(str(i))), end = '')
 
-print("\n\nword[" + (str(start) != "None" and str(start) or "") + ":" + (str(end) != "None" and str(end) or "") + "] is", word[start:end], end = "\n\n")
+print("\n\nword[" + (str(start) != "None" and str(start) or "") + ":" + (str(end) != "None" and str(end) or "") + (step != 1 and (":" + str(step)) or "") + "] is", word[start:end:step], end = "\n\n")
